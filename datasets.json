@@ -1,0 +1,114 @@
+{
+  "template": {
+    "link": "",
+    "img_type": "",
+    "dims": "",
+    "color": "",
+    "n_of_samples": "",
+    "label": "",
+    "task": "",
+    "available": "",
+    "input": "",
+    "metadata": ""
+  },
+
+  "raptor_maps": {
+    "link": "https://github.com/RaptorMaps/InfraredSolarModules",
+    "img_type": "infrared",
+    "dims": "24x40",
+    "color": "gray",
+    "n_of_samples": "20000",
+    "label": "12 defined classes of solar modules, 11 anomalies and 1 ok",
+    "task": "classification",
+    "available": "public",
+    "input": "center cropped module",
+    "metadata": "img_id, img_filepath, anomaly_class"
+  },
+
+  "pvk_italy": {
+    "link": "https://www.tandfonline.com/doi/full/10.1080/00224065.2021.1948372?scroll=top&needAccess=true",
+    "img_type": "RJPG infrared with temperatures",
+    "dims": "640x512",
+    "color": "gray",
+    "n_of_samples": "120",
+    "label": "defective or normal",
+    "task": "classification",
+    "available": "public",
+    "input": "raw, drone collected image of panel with 20 modules, with background and perspective distortion",
+    "metadata": "none",
+    "code": "mathlab code provided for preprocessing, anomaly detection and postprocessing"
+  },
+
+  "valle_ds": {
+    "link": "https://data.mendeley.com/datasets/82vzccxb6y/2",
+    "img_type": "infrared + temperature, wind speed, irradiance",
+    "dims": "336x256",
+    "color": "gray",
+    "n_of_samples": "277",
+    "label": "none",
+    "task": "classification",
+    "available": "public",
+    "input": "two panels centered, with background and other surrounding objects",
+    "metadata": [
+      "No.",
+      "Date/Hour",
+      "Irradiance",
+      "Interval",
+      "Internal Temperature(C)",
+      "Internal Humidity(%)",
+      "External Temperature(C)",
+      "External Humidity(%)",
+      "Relative Pressure(hpa)",
+      "Absolute Pressure(hpa)",
+      "Wind Speed(km/h)",
+      "Burst(km/h)",
+      "Direction of the wind",
+      "Dew point(C)",
+      "Thermal Sensation(C)",
+      "Rain hour(mm)",
+      "24 Hour Rain(mm)",
+      "Rain Week(mm)",
+      "Rain Month(mm)",
+      "Total Rain(mm)"
+    ]
+  },
+
+  "pierdicca_ds": {
+    "link": "https://vrai.dii.univpm.it/content/photovoltaic-thermal-images-dataset",
+    "img_type": "infrared + thermal value + binary mask",
+    "dims": "512x640",
+    "color": "RGB",
+    "n_of_samples": "1009",
+    "label": "binary mask",
+    "task": "instance segmentation",
+    "available": "on request",
+    "input": "raw infrared rgb image of several panels",
+    "metadata": "temperature values available by thermoviewer extraction"
+  },
+
+  "xiaoxia_ds": {
+    "link": "https://ieeexplore.ieee.org/document/8478340",
+    "img_type": "normal JPEG",
+    "dims": "224x224",
+    "color": "RGB",
+    "n_of_samples": "8400",
+    "label": "5 types of defects + normal",
+    "task": "classification",
+    "available": "on request",
+    "input": "no info",
+    "metadata": "no info"
+  },
+
+  "elpv_ds": {
+    "link": "https://github.com/zae-bayern/elpv-dataset",
+    "img_type": "electroluminescence",
+    "dims": "300x300",
+    "color": "gray",
+    "n_of_samples": "2624",
+    "label": "float between 0-1 as defect probability",
+    "task": "classification",
+    "available": "public",
+    "input": "center cropped individual cell",
+    "metadata": "filename, defect probability and module type"
+  }
+}
